@@ -10,7 +10,7 @@ export default function TermsPage() {
     <article className="section-space bg-surface">
       <div className="mx-auto max-w-[720px] px-5">
         <p className="eyebrow">Legal</p>
-        <h1 className="mt-3 text-4xl md:text-5xl">{PAGE_META.terms.h1}</h1>
+        <h1 className="mt-3 text-3xl md:text-5xl">{PAGE_META.terms.h1}</h1>
         <p className="mt-4 text-sm text-text-muted">Current as of {LAST_UPDATED}</p>
         <div className="mt-8 space-y-5 text-text-muted">
           <p>

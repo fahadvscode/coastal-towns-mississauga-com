@@ -2,8 +2,8 @@ import { DECO_LOGO, OPUS_LOGO } from "@/lib/content";
 
 export function BuilderLogos() {
   return (
-    <div className="mt-8 grid max-w-[520px] grid-cols-2 items-center gap-6">
-      <div className="card flex min-h-[120px] items-center justify-center px-6 py-5">
+    <div className="mt-8 grid max-w-[520px] grid-cols-2 items-center gap-3 sm:gap-6">
+      <div className="card flex min-h-[88px] items-center justify-center px-3 py-4 sm:min-h-[120px] sm:px-6 sm:py-5">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={DECO_LOGO.src}
@@ -13,7 +13,7 @@ export function BuilderLogos() {
           className="h-12 w-auto max-w-full sm:h-14"
         />
       </div>
-      <div className="card flex min-h-[120px] items-center justify-center px-6 py-5">
+      <div className="card flex min-h-[88px] items-center justify-center px-3 py-4 sm:min-h-[120px] sm:px-6 sm:py-5">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={OPUS_LOGO.src}

@@ -14,7 +14,7 @@ export function GalleryGrid({ items }: { items: SiteImage[] }) {
                 width={item.width}
                 height={item.height}
                 sizes="(max-width: 768px) 100vw, 580px"
-                className="aspect-[16/10] h-auto w-full object-cover"
+                className="aspect-[4/3] h-auto w-full object-cover md:aspect-[16/10]"
               />
               {item.pending ? (
                 <p className="absolute left-3 top-3 rounded-sm bg-brand-deep/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-surface">

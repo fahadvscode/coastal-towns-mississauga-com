@@ -9,6 +9,7 @@ export function LocationMap() {
         className="aspect-[4/3] w-full border-0 md:aspect-[16/9]"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        allowFullScreen
       />
       <figcaption className="px-4 py-3 text-sm text-text-muted">
         Approximate location at {STREET_ADDRESS}, Mississauga, inside Lakeview Village. Postal

@@ -28,7 +28,7 @@ export default function ThankYouPage() {
       <section className="section-space bg-surface">
         <div className="mx-auto max-w-[720px] px-5">
           <p className="eyebrow">Registration received</p>
-          <h1 className="mt-3 text-4xl md:text-5xl">{PAGE_META.thankYou.h1}</h1>
+          <h1 className="mt-3 text-3xl md:text-5xl">{PAGE_META.thankYou.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
               The Registration Team has your details for South Banks Towns by Deco Homes and Opus

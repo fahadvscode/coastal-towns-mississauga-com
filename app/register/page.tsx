@@ -27,7 +27,7 @@ export default function RegisterPage() {
         <div className="mx-auto grid max-w-[1200px] gap-10 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="eyebrow">VIP Registration</p>
-            <h1 className="mt-3 text-4xl md:text-5xl">{PAGE_META.register.h1}</h1>
+            <h1 className="mt-3 text-3xl md:text-5xl">{PAGE_META.register.h1}</h1>
             <p className="prose-measure mt-6 text-text-muted">
               Register for launch timing, the confirmed price list, and floor plans as they are
               released. The official project site lists coastal townhomes from $549,990, coming this

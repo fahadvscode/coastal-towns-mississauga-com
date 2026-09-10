@@ -10,7 +10,7 @@ export function Wordmark({ inverted = false }: { inverted?: boolean }) {
         alt=""
         width={SOUTH_BANKS_LOGO.width}
         height={SOUTH_BANKS_LOGO.height}
-        className="h-7 w-auto max-w-[11.5rem] sm:h-8 sm:max-w-[14rem]"
+        className="h-7 w-auto max-w-[9.75rem] sm:h-8 sm:max-w-[14rem]"
       />
       <span className={`mt-1.5 block text-[10px] font-medium tracking-wide sm:text-[11px] ${inverted ? "text-surface/80" : "text-text-muted"}`}>
         Lakeview Village

@@ -5,7 +5,7 @@ export default function NotFound() {
     <section className="section-space bg-surface">
       <div className="mx-auto max-w-[720px] px-5">
         <p className="eyebrow">Page not found</p>
-        <h1 className="mt-3 text-4xl md:text-5xl">That page is not on this site</h1>
+        <h1 className="mt-3 text-3xl md:text-5xl">That page is not on this site</h1>
         <p className="prose-measure mt-6 text-text-muted">
           The address may have changed, or it may never have existed. Use the navigation or
           register for South Banks Towns updates from the homepage.

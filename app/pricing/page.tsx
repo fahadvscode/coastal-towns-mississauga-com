@@ -29,7 +29,7 @@ export default function PricingPage() {
       <article className="section-space bg-surface">
         <div className="mx-auto max-w-[800px] px-5">
           <p className="eyebrow">Reported range</p>
-          <h1 className="mt-3 text-4xl md:text-5xl">{PAGE_META.pricing.h1}</h1>
+          <h1 className="mt-3 text-3xl md:text-5xl">{PAGE_META.pricing.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
               The official South Banks site lists coastal townhomes from $549,990, coming this

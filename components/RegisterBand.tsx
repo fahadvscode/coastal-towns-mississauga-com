@@ -25,7 +25,7 @@ export function RegisterBand({
               width={REGISTRATION_IMAGE.width}
               height={REGISTRATION_IMAGE.height}
               sizes="(max-width: 1024px) 100vw, 520px"
-              className="aspect-square h-auto w-full object-cover"
+              className="aspect-[16/10] h-auto w-full object-cover lg:aspect-square"
             />
             <figcaption className="px-4 py-3 text-sm text-text-muted">
               {REGISTRATION_IMAGE.caption}

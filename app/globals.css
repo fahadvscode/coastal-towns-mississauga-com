@@ -32,10 +32,16 @@
 html {
   scroll-behavior: smooth;
   overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 img,
-video,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 iframe {
   max-width: 100%;
 }
@@ -76,6 +82,14 @@ body {
     color: var(--brand-primary);
     letter-spacing: -0.02em;
     line-height: 1.15;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
   }
 }
 
@@ -99,7 +113,7 @@ body {
 }
 
 .section-space {
-  padding-block: 4rem;
+  padding-block: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -206,6 +220,7 @@ button.btn-primary {
   line-height: 1.2;
   text-decoration: none;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 a.btn-primary:hover,

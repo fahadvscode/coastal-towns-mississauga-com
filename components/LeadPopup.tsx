@@ -156,9 +156,9 @@ export function LeadPopup() {
       />
       <div
         ref={dialogRef}
-        className="popup-panel relative z-10 flex w-full max-w-[32rem] max-h-[min(92dvh,40rem)] flex-col overflow-hidden rounded-lg border border-border bg-surface shadow-[0_18px_50px_rgba(14,56,68,0.28)]"
+        className="popup-panel relative z-10 flex w-full max-w-[32rem] max-h-[min(92dvh,42rem)] flex-col overflow-hidden rounded-lg border border-border bg-surface shadow-[0_18px_50px_rgba(14,56,68,0.28)] sm:max-h-[min(92dvh,40rem)]"
       >
-        <div className="relative h-28 shrink-0 sm:h-32">
+        <div className="relative h-20 shrink-0 sm:h-32">
           <Image
             src={REGISTRATION_IMAGE.src}
             alt=""

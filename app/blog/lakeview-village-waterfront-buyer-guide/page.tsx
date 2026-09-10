@@ -29,7 +29,7 @@ export default function BlogPage() {
       <article className="section-space bg-surface">
         <div className="mx-auto max-w-[760px] px-5">
           <p className="eyebrow">Lakeview Village</p>
-          <h1 className="mt-3 text-4xl md:text-5xl">{PAGE_META.blog.h1}</h1>
+          <h1 className="mt-3 text-3xl md:text-5xl">{PAGE_META.blog.h1}</h1>
           <p className="mt-4 text-sm text-text-muted">Last updated {LAST_UPDATED}</p>
           <figure className="card mt-8 overflow-hidden">
             <Image

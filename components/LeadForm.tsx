@@ -10,7 +10,7 @@ import { captureFirstTouch, readFirstTouch } from "@/lib/utm";
 import { FORM_START_KEY, PENDING_CONVERSION_KEY, trackEvent } from "@/lib/analytics";
 
 const inputClass =
-  "mt-1.5 w-full min-h-[44px] rounded-sm border border-border bg-surface-card px-3 py-2.5 text-text-primary";
+  "mt-1.5 w-full min-h-[44px] rounded-sm border border-border bg-surface-card px-3 py-2.5 text-[16px] text-text-primary";
 const labelClass = "block text-[15px] font-semibold text-brand-primary";
 
 export function LeadForm({
@@ -142,6 +142,8 @@ export function LeadForm({
           <input
             id={`${id}-first_name`}
             autoComplete="given-name"
+            autoCapitalize="words"
+            autoCorrect="off"
             className={inputClass}
             {...form.register("first_name")}
           />
@@ -156,6 +158,8 @@ export function LeadForm({
           <input
             id={`${id}-last_name`}
             autoComplete="family-name"
+            autoCapitalize="words"
+            autoCorrect="off"
             className={inputClass}
             {...form.register("last_name")}
           />

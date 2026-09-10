@@ -32,6 +32,11 @@ export const viewport: Viewport = {
   themeColor: "#1C5F73",
 };
 
+const gscVerification = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
+const bingVerification = process.env.NEXT_PUBLIC_BING_VERIFICATION;
+const hasGsc = Boolean(gscVerification && !gscVerification.startsWith("PLACEHOLDER"));
+const hasBing = Boolean(bingVerification && !bingVerification.startsWith("PLACEHOLDER"));
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   ...buildMetadata(PAGE_META.home),
@@ -41,6 +46,11 @@ export const metadata: Metadata = {
   },
   applicationName: SITE_NAME,
   manifest: "/site.webmanifest",
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
   icons: {
     icon: [
       { url: "/icon-48.png", sizes: "48x48", type: "image/png" },
@@ -50,13 +60,14 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
-  // replace with real verification token before launch
-  verification: {
-    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION || "PLACEHOLDER_GSC_TOKEN",
-    other: {
-      "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION || "PLACEHOLDER_BING_TOKEN",
-    },
-  },
+  ...(hasGsc || hasBing
+    ? {
+        verification: {
+          ...(hasGsc ? { google: gscVerification } : {}),
+          ...(hasBing ? { other: { "msvalidate.01": bingVerification as string } } : {}),
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({
@@ -64,15 +75,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const gsc = process.env.NEXT_PUBLIC_GSC_VERIFICATION || "PLACEHOLDER_GSC_TOKEN";
-  const bing = process.env.NEXT_PUBLIC_BING_VERIFICATION || "PLACEHOLDER_BING_TOKEN";
-
   return (
     <html lang="en-CA" className={`${sora.variable} ${inter.variable}`}>
       <head>
-        {/* replace with real verification token before launch */}
-        <meta name="google-site-verification" content={gsc} />
-        <meta name="msvalidate.01" content={bing} />
+        {hasGsc ? <meta name="google-site-verification" content={gscVerification} /> : null}
+        {hasBing ? <meta name="msvalidate.01" content={bingVerification} /> : null}
         <meta name="theme-color" content="#1C5F73" />
         <link rel="icon" href="/icon-48.png" sizes="48x48" type="image/png" />
         <link rel="icon" href="/favicon.ico" sizes="48x48" />
@@ -87,7 +94,7 @@ export default function RootLayout({
         <JsonLd data={websiteSchema()} />
         <JsonLd data={siteOrganizationSchema()} />
         <Nav />
-        <main id="main" className="flex-1 pb-20 md:pb-0">
+        <main id="main" className="flex-1 pb-24 md:pb-0">
           {children}
         </main>
         <Footer />

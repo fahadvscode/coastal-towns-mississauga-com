@@ -37,7 +37,7 @@ export default function LocationPage() {
       <article className="section-space bg-surface">
         <div className="mx-auto max-w-[1200px] px-5">
           <p className="eyebrow">Lakeview Village</p>
-          <h1 className="mt-3 max-w-[22ch] text-4xl md:text-5xl">{PAGE_META.location.h1}</h1>
+          <h1 className="mt-3 max-w-[22ch] text-3xl md:text-5xl">{PAGE_META.location.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
               South Banks Towns is located at 1110 Lakeshore Road East in Mississauga, Ontario,

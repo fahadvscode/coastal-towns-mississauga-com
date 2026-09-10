@@ -28,7 +28,7 @@ export default function GalleryPage() {
       <article className="section-space bg-surface">
         <div className="mx-auto max-w-[1200px] px-5">
           <p className="eyebrow">Imagery</p>
-          <h1 className="mt-3 max-w-[20ch] text-4xl md:text-5xl">{PAGE_META.gallery.h1}</h1>
+          <h1 className="mt-3 max-w-[20ch] text-3xl md:text-5xl">{PAGE_META.gallery.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
               Official South Banks Towns imagery from the Deco Homes and Opus Homes marketing set

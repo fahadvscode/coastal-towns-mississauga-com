@@ -18,7 +18,7 @@ export function Nav() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-colors duration-300 ${
+      className={`sticky top-0 z-50 pt-[env(safe-area-inset-top)] transition-colors duration-300 ${
         scrolled
           ? "border-b border-border bg-surface/95 backdrop-blur-sm"
           : "border-b border-transparent bg-surface/80"

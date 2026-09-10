@@ -28,7 +28,7 @@ export default function FloorPlansPage() {
       <article className="section-space bg-surface">
         <div className="mx-auto max-w-[1200px] px-5">
           <p className="eyebrow">Configurations</p>
-          <h1 className="mt-3 max-w-[20ch] text-4xl md:text-5xl">{PAGE_META.floorPlans.h1}</h1>
+          <h1 className="mt-3 max-w-[20ch] text-3xl md:text-5xl">{PAGE_META.floorPlans.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
               South Banks Towns is described as a collection of more than 120 three-storey

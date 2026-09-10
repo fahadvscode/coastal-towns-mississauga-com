@@ -1,6 +1,6 @@
 /**
  * Single source of truth for every project fact used in pages, metadata, and JSON-LD.
- * Last updated: 2026-09-06
+ * Last updated: 2026-09-10
  *
  * This site is the Primary Information Hub for South Banks Towns.
  * Pricing-tracker angle belongs to the sibling domain coastaltowns.ca — do not duplicate that
@@ -11,8 +11,8 @@ export const SITE_URL = "https://coastaltownsmississauga.com";
 export const SITE_HOST = "coastaltownsmississauga.com";
 export const SITE_SOURCE = "coastaltownsmississauga.com";
 
-export const LAST_UPDATED = "September 6, 2026";
-export const LAST_UPDATED_ISO = "2026-09-06";
+export const LAST_UPDATED = "September 10, 2026";
+export const LAST_UPDATED_ISO = "2026-09-10";
 
 export const PROJECT_NAME = "South Banks Towns";
 export const PROJECT_NAME_LONG = "South Banks Towns";
@@ -276,7 +276,7 @@ export const PRICING_ROWS: PricingRow[] = [
   },
   {
     label: "Confirmed builder price list",
-    value: "Not published as a single official list as of September 6, 2026",
+    value: "Not published as a single official list as of September 10, 2026",
     source: "No primary Deco Homes / Opus Homes price sheet located",
   },
   {
@@ -399,7 +399,7 @@ export const CASL_CONSENT =
   "I consent to emails about South Banks Towns and similar pre-construction opportunities. Unsubscribe anytime.";
 
 export const PRICING_DISCLAIMER =
-  "Prices, sizes, specifications, and availability are subject to change without notice. E.&O.E. Information current as of September 6, 2026.";
+  "Prices, sizes, specifications, and availability are subject to change without notice. E.&O.E. Information current as of September 10, 2026.";
 
 export const NAV: { href: string; label: string }[] = [
   { href: "/floor-plans", label: "Floor Plans" },
@@ -421,60 +421,62 @@ export const PAGE_META = {
     path: "/",
     title: "South Banks Towns | Coastal Townhomes in Lakeview Village",
     description:
-      "South Banks Towns — coastal townhomes by Deco & Opus in Lakeview Village, Mississauga. From $549,990, coming this fall.",
+      "South Banks Towns by Deco Homes and Opus Homes: coastal townhomes in Lakeview Village, Mississauga. From $549,990, coming this fall. Register for plans.",
     h1: "South Banks Towns — Coastal Townhomes in Lakeview Village",
   },
   floorPlans: {
     path: "/floor-plans",
     title: "South Banks Towns Floor Plans",
-    description: "Explore South Banks Towns' freehold townhome configurations in Lakeview Village.",
+    description:
+      "South Banks Towns floor plans: 3-bed, 3-bed + den, 4-bed, and premium end-unit freehold towns in Lakeview Village. Register for sizes when released.",
     h1: "South Banks Towns Floor Plans — Freehold Townhomes",
   },
   pricing: {
     path: "/pricing",
     title: "South Banks Towns Prices",
     description:
-      "South Banks Towns pricing, reconciled across sources and tracked as details are confirmed.",
+      "South Banks Towns prices start at $549,990 on the official project site. Compare reported ranges, deposits, and the Fall 2026 Lakeview Village launch.",
     h1: "South Banks Towns Prices & Deposit Structure",
   },
   location: {
     path: "/location",
     title: "South Banks Towns Location | Lakeview Village",
     description:
-      "South Banks Towns sits in Lakeview Village at 1110 Lakeshore Rd E — parks, transit & builders compared.",
+      "South Banks Towns at 1110 Lakeshore Road East in Mississauga’s Lakeview Village — parks, marina, pier, GO access, and neighbouring builders compared.",
     h1: "South Banks Towns Location — Lakeview Village, Mississauga",
   },
   gallery: {
     path: "/gallery",
-    title: "South Banks Towns Renderings & Site Plan",
+    title: "South Banks Towns Renderings & Photos",
     description:
-      "South Banks Towns renderings and site plan status, plus Lakeview Village waterfront context photography.",
-    h1: "South Banks Towns Renderings & Site Plan",
+      "Official South Banks Towns renderings and waterfront photography for Deco Homes and Opus Homes coastal townhomes in Lakeview Village, Mississauga.",
+    h1: "South Banks Towns Renderings & Photos",
   },
   faq: {
     path: "/faq",
     title: "South Banks Towns FAQ",
-    description: "South Banks Towns FAQ — pricing, location, builders, and how to register.",
+    description:
+      "South Banks Towns FAQ: prices from $549,990, Lakeview Village location, Deco and Opus Homes, floor plans, launch timing, and how to register.",
     h1: "South Banks Towns FAQ",
   },
   register: {
     path: "/register",
     title: "Register — South Banks Towns Updates",
-    description: "Register for South Banks Towns' current pricing, floor plans, and launch date.",
+    description:
+      "Join the South Banks Towns VIP list for pricing, floor plans, and the Fall 2026 launch of coastal townhomes in Lakeview Village, Mississauga.",
     h1: "Register for South Banks Towns Updates",
   },
   thankYou: {
     path: "/thank-you",
     title: "Registration received | South Banks Towns",
-    description:
-      "The Registration Team has your South Banks Towns registration.",
+    description: "The Registration Team has your South Banks Towns registration.",
     h1: "You are on the South Banks Towns update list",
   },
   blog: {
     path: "/blog/lakeview-village-waterfront-buyer-guide",
     title: "Lakeview Village, Mississauga: A Waterfront Buyer's Guide",
     description:
-      "Lakeview Village, Mississauga: A Waterfront Buyer's Guide to Every Builder Releasing Homes There",
+      "Compare South Banks Towns, Aura, and Pier House in Mississauga’s Lakeview Village — builders, prices, and how to read incomplete waterfront listings.",
     h1: "Lakeview Village, Mississauga: A Waterfront Buyer's Guide to Every Builder Releasing Homes There",
   },
   privacy: {
@@ -500,7 +502,6 @@ export const SITEMAP_PATHS = [
   "/gallery",
   "/faq",
   "/register",
-  "/thank-you",
   "/blog/lakeview-village-waterfront-buyer-guide",
   "/privacy",
   "/terms",

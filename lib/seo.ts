@@ -9,13 +9,27 @@ export function canonical(path: string): string {
 export function buildMetadata(page: PageMeta): Metadata {
   const url = canonical(page.path);
   const image = `${SITE_URL}${OG_IMAGE.src}`;
+  const noindex = page.path === "/thank-you";
 
   return {
     title: page.title,
     description: page.description,
     alternates: { canonical: url },
+    robots: noindex
+      ? { index: false, follow: false }
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+          },
+        },
     openGraph: {
-      type: "website",
+      type: page.path.startsWith("/blog/") ? "article" : "website",
       url,
       title: page.title,
       description: page.description,

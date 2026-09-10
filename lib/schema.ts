@@ -25,6 +25,7 @@ import {
   ADDRESS_LOCALITY,
   ADDRESS_REGION,
   ADDRESS_COUNTRY,
+  POSTAL_PRIMARY,
 } from "./content";
 import { canonical } from "./seo";
 
@@ -48,6 +49,7 @@ export function siteOrganizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: SITE_ORG_NAME,
     url: `${SITE_URL}/`,
+    logo: `${SITE_URL}/icon-512.png`,
     description:
       "An independent information and registration resource for South Banks Towns. Not affiliated with or endorsed by Deco Homes or Opus Homes.",
   };
@@ -66,6 +68,7 @@ export function residenceSchema() {
       streetAddress: STREET_ADDRESS,
       addressLocality: ADDRESS_LOCALITY,
       addressRegion: ADDRESS_REGION,
+      postalCode: POSTAL_PRIMARY,
       addressCountry: ADDRESS_COUNTRY,
     },
     url: `${SITE_URL}/`,
@@ -75,11 +78,19 @@ export function residenceSchema() {
       latitude: GEO.latitude,
       longitude: GEO.longitude,
     },
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "CAD",
+      lowPrice: PRICE_LOW,
+      highPrice: PRICE_HIGH,
+      availability: "https://schema.org/PreOrder",
+      url: `${SITE_URL}/pricing`,
+      priceValidUntil: "2026-12-31",
+    },
     additionalProperty: [
       { "@type": "PropertyValue", name: "Builder", value: BUILDER },
       { "@type": "PropertyValue", name: "Status", value: STATUS },
       { "@type": "PropertyValue", name: "Home types", value: HOME_TYPES },
-      { "@type": "PropertyValue", name: "Former name", value: LEGACY_NAME },
     ],
   };
 }
@@ -97,7 +108,7 @@ export function aggregateOfferSchema() {
     highPrice: PRICE_HIGH,
     availability: "https://schema.org/PreOrder",
     url: `${SITE_URL}/pricing`,
-    priceValidUntil: LAST_UPDATED_ISO,
+    priceValidUntil: "2026-12-31",
   };
 }
 
