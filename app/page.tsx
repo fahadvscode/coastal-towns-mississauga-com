@@ -5,6 +5,7 @@ import { QuickFacts } from "@/components/QuickFacts";
 import { RegisterBand } from "@/components/RegisterBand";
 import { FadeIn } from "@/components/FadeIn";
 import { JsonLd } from "@/components/JsonLd";
+import { BuilderLogos } from "@/components/BuilderLogos";
 import { LAST_UPDATED, PAGE_META, PRICING_DISCLAIMER } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 import { aggregateOfferSchema, breadcrumbSchema, residenceSchema, webPageSchema } from "@/lib/schema";
@@ -109,6 +110,7 @@ export default function HomePage() {
               &quot;Lakeview Homes&quot; — a misnomer that appears on at least one competing page
               and should not be repeated.
             </p>
+            <BuilderLogos />
           </div>
         </div>
       </section>

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { FloorPlanCard } from "@/components/FloorPlanCard";
 import { RegisterBand } from "@/components/RegisterBand";
 import { JsonLd } from "@/components/JsonLd";
-import { COLLECTIONS, PAGE_META, PRICING_DISCLAIMER } from "@/lib/content";
+import { COLLECTIONS, HERO_IMAGE, PAGE_META, PRICING_DISCLAIMER } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 
@@ -71,6 +72,19 @@ export default function FloorPlansPage() {
               may say South Banks. The missing numbers are the same missing numbers.
             </p>
           </div>
+          <figure className="card mt-10 max-w-[720px] overflow-hidden">
+            <Image
+              src={HERO_IMAGE.src}
+              alt={HERO_IMAGE.alt}
+              width={HERO_IMAGE.width}
+              height={HERO_IMAGE.height}
+              sizes="(max-width: 720px) 100vw, 720px"
+              className="h-auto w-full object-cover"
+            />
+            <figcaption className="px-4 py-3 text-sm text-text-muted">
+              {HERO_IMAGE.caption} Individual plan names and interior sizes are still unreleased.
+            </figcaption>
+          </figure>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             {COLLECTIONS.map((collection) => (
               <FloorPlanCard key={collection.id} collection={collection} />

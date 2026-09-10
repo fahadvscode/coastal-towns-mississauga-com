@@ -54,30 +54,73 @@ export const PRICE_HIGH = 1000000;
 export const SITE_NAME = "South Banks Towns (formerly Coastal Towns)";
 export const SITE_ORG_NAME = "South Banks Towns Independent Information";
 
+export const SOUTH_BANKS_LOGO = {
+  src: "/images/brand/south-banks-logo.svg",
+  whiteSrc: "/images/brand/south-banks-logo-white.svg",
+  alt: "South Banks wordmark",
+  width: 701,
+  height: 98,
+} as const;
+
+export const DECO_LOGO = {
+  src: "/images/brand/deco-logo.svg",
+  alt: "Deco Homes logo",
+  width: 660,
+  height: 177,
+} as const;
+
+export const OPUS_LOGO = {
+  src: "/images/brand/opus-logo.svg",
+  alt: "Opus Homes logo",
+  width: 304,
+  height: 54,
+} as const;
+
 export const HERO_IMAGE = {
-  src: "/images/south-banks-hero.webp",
-  fallbackSrc: "/images/south-banks-hero.jpg",
-  alt: "Lake Ontario shoreline in Mississauga's Lakeview area at golden hour — waterfront context for South Banks Towns, formerly marketed as Coastal Towns. Not an architectural rendering of the townhomes.",
-  width: 1920,
-  height: 1080,
+  src: "/images/image001.webp",
+  fallbackSrc: "/images/image001.jpg",
+  alt: "Architectural rendering of three-storey South Banks Towns freehold townhomes on a tree-lined street in Lakeview Village, Mississauga. Illustrative only.",
+  width: 1246,
+  height: 1239,
   caption:
-    "Lake Ontario shoreline context near Lakeview Village. This is location photography, not a South Banks Towns architectural rendering.",
+    "Official South Banks Towns townhome rendering (image001). Illustrative only; sizes, finishes, and landscaping are subject to change. E.&O.E.",
 } as const;
 
 export const OG_IMAGE = {
   src: "/images/og.jpg",
   width: 1200,
   height: 630,
-  alt: "South Banks Towns (formerly Coastal Towns) — Lake Ontario waterfront context in Lakeview Village, Mississauga.",
+  alt: "South Banks Towns (formerly Coastal Towns) — official townhome rendering in Lakeview Village, Mississauga.",
 } as const;
 
 export const REGISTRATION_IMAGE = {
-  src: "/images/registration-waterfront.webp",
-  fallbackSrc: "/images/registration-waterfront.jpg",
-  width: 1200,
-  height: 1200,
-  alt: "Lake Ontario water at dusk near Mississauga's Lakeview shoreline — VIP registration context for South Banks Towns. Not a townhome rendering.",
-  caption: "Lake Ontario dusk light near Lakeview. Context photography, not a project rendering.",
+  src: "/images/DO_SB_Photography-12.webp",
+  fallbackSrc: "/images/DO_SB_Photography-12.jpg",
+  width: 1600,
+  height: 1710,
+  alt: "South Banks lifestyle photography along the Lake Ontario waterfront — cyclists on a shoreline path. Official project photography, not a specific unit.",
+  caption:
+    "Official South Banks photography (DO_SB_Photography-12). Lifestyle imagery; not a rendering of a specific townhome.",
+} as const;
+
+export const LOCATION_IMAGE = {
+  src: "/images/DO_SB_Photography-9.webp",
+  fallbackSrc: "/images/DO_SB_Photography-9.jpg",
+  width: 1400,
+  height: 2100,
+  alt: "A rower on calm water beside a wooden boardwalk — official South Banks photography (DO_SB_Photography-9) near the Lake Ontario shoreline.",
+  caption:
+    "DO_SB_Photography-9 — official South Banks waterfront photography used here as location context. Confirm walking routes independently.",
+} as const;
+
+export const BRIDGE_IMAGE = {
+  src: "/images/Final_Bridge_1.webp",
+  fallbackSrc: "/images/Final_Bridge_1.jpg",
+  width: 1920,
+  height: 1937,
+  alt: "Illustrated aerial view of a white arch bridge over a waterway with kayaks and shoreline paths — Final_Bridge_1 from the South Banks set.",
+  caption:
+    "Final_Bridge_1 — illustrated waterfront bridge concept from the South Banks marketing set. Not a construction photograph.",
 } as const;
 
 export type SiteImage = {
@@ -94,72 +137,59 @@ export type SiteImage = {
 
 export const GALLERY_ITEMS: SiteImage[] = [
   {
-    id: "renderings-pending",
-    src: "/images/south-banks-hero.webp",
-    fallbackSrc: "/images/south-banks-hero.jpg",
-    width: 1920,
-    height: 1080,
-    title: "Official renderings — to be added",
-    alt: "Lake Ontario shoreline used as a labelled placeholder until licensed South Banks Towns architectural renderings are available.",
+    id: "image001",
+    src: "/images/image001.webp",
+    fallbackSrc: "/images/image001.jpg",
+    width: 1246,
+    height: 1239,
+    title: "Townhome rendering",
+    alt: "Official architectural rendering of three-storey South Banks Towns freehold townhomes on a landscaped street.",
     caption:
-      "Official South Banks Towns / Coastal Towns architectural renderings have not been confirmed as licensable for this site. This panel is a labelled “to be added” state, not a substitute streetscape.",
-    pending: true,
+      "image001 — official South Banks Towns townhome rendering. Illustrative only; specifications are subject to change. E.&O.E.",
   },
   {
-    id: "site-plan-pending",
-    src: "/images/jim-tovey-conservation.webp",
-    fallbackSrc: "/images/jim-tovey-conservation.jpg",
+    id: "final-bridge-1",
+    src: "/images/Final_Bridge_1.webp",
+    fallbackSrc: "/images/Final_Bridge_1.jpg",
     width: 1920,
-    height: 1080,
-    title: "Site plan — to be added",
-    alt: "Waterfront conservation boardwalk near Lakeview Village, used as a labelled placeholder until an official South Banks Towns site plan is released.",
+    height: 1937,
+    title: "Waterfront bridge illustration",
+    alt: "Illustrated aerial view of a white arch bridge over a waterway with kayaks, a beach, and shoreline paths — Final_Bridge_1 from the South Banks set.",
     caption:
-      "No official South Banks Towns site plan has been published for republication here. Register for updates when a confirmed plan is released.",
-    pending: true,
+      "Final_Bridge_1 — illustrated waterfront bridge concept from the South Banks marketing set. Not a construction photograph.",
   },
   {
-    id: "conservation",
-    src: "/images/jim-tovey-conservation.webp",
-    fallbackSrc: "/images/jim-tovey-conservation.jpg",
-    width: 1920,
-    height: 1080,
-    title: "Jim Tovey Lakeview Conservation Area context",
-    alt: "Boardwalk through shoreline grasses on a restored Lake Ontario conservation shoreline near Lakeview Village, Mississauga.",
+    id: "photography-9",
+    src: "/images/DO_SB_Photography-9.webp",
+    fallbackSrc: "/images/DO_SB_Photography-9.jpg",
+    width: 1400,
+    height: 2100,
+    title: "Boardwalk and harbour",
+    alt: "A rower on calm water beside a wooden boardwalk, official South Banks photography along the Lake Ontario shoreline.",
     caption:
-      "Waterfront conservation context consistent with the Jim Tovey Lakeview Conservation Area (64 acres / 26 hectares). Context photography; not a South Banks Towns amenity rendering.",
+      "DO_SB_Photography-9 — official South Banks waterfront photography. Lifestyle context, not a guaranteed on-site amenity photo.",
   },
   {
-    id: "pier",
-    src: "/images/lakeview-pier.webp",
-    fallbackSrc: "/images/lakeview-pier.jpg",
-    width: 1920,
-    height: 1080,
-    title: "Pier and boardwalk context",
-    alt: "Wooden pier extending into Lake Ontario, illustrating the waterfront boardwalk character described for Lakeview Village.",
+    id: "photography-10",
+    src: "/images/DO_SB_Photography-10.webp",
+    fallbackSrc: "/images/DO_SB_Photography-10.jpg",
+    width: 1400,
+    height: 2100,
+    title: "Lakeshore lifestyle",
+    alt: "A family standing in Lake Ontario at the shoreline, official South Banks lifestyle photography.",
     caption:
-      "Lakeview Village’s master plan cites a 600-metre pier with a retail boardwalk. This is waterfront context photography, not a confirmed South Banks Towns construction photo.",
+      "DO_SB_Photography-10 — official South Banks lifestyle photography. Not a photograph of a specific purchaser or unit.",
   },
   {
-    id: "promenade",
-    src: "/images/lakefront-promenade.webp",
-    fallbackSrc: "/images/lakefront-promenade.jpg",
+    id: "photography-12",
+    src: "/images/DO_SB_Photography-12.webp",
+    fallbackSrc: "/images/DO_SB_Photography-12.jpg",
     width: 1600,
-    height: 1200,
-    title: "Lakefront Promenade Park context",
-    alt: "Tree-lined waterfront path beside Lake Ontario in Mississauga, illustrating parks near 1110 Lakeshore Road East.",
+    height: 1710,
+    title: "Waterfront cycling",
+    alt: "Cyclists on a paved path beside Lake Ontario, official South Banks photography.",
     caption:
-      "Named nearby parks include Lakefront Promenade Park and Marie Curtis Park. Confirm walking distances independently; this is not a project site photo.",
-  },
-  {
-    id: "trail",
-    src: "/images/waterfront-trail.webp",
-    fallbackSrc: "/images/waterfront-trail.jpg",
-    width: 1920,
-    height: 1080,
-    title: "Great Lakes Waterfront Trail context",
-    alt: "Crushed-stone waterfront trail along a restored Lake Ontario shoreline near Mississauga.",
-    caption:
-      "The Jim Tovey Lakeview Conservation Area connects to the Great Lakes Waterfront Trail. Context photography of shoreline parkland, not a South Banks Towns rendering.",
+      "DO_SB_Photography-12 — official South Banks photography of the Lake Ontario shoreline path.",
   },
 ];
 

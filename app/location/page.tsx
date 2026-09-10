@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { LocationMap } from "@/components/LocationMap";
 import { RegisterBand } from "@/components/RegisterBand";
 import { JsonLd } from "@/components/JsonLd";
-import { LAKEVIEW_COMPARISON, PAGE_META, POSTAL_LEGACY, POSTAL_PRIMARY, PRICING_DISCLAIMER } from "@/lib/content";
+import {
+  BRIDGE_IMAGE,
+  LAKEVIEW_COMPARISON,
+  LOCATION_IMAGE,
+  PAGE_META,
+  POSTAL_LEGACY,
+  POSTAL_PRIMARY,
+  PRICING_DISCLAIMER,
+} from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 
@@ -56,8 +65,21 @@ export default function LocationPage() {
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
             <LocationMap />
+            <figure className="card overflow-hidden">
+              <Image
+                src={LOCATION_IMAGE.src}
+                alt={LOCATION_IMAGE.alt}
+                width={LOCATION_IMAGE.width}
+                height={LOCATION_IMAGE.height}
+                sizes="(max-width: 1024px) 100vw, 580px"
+                className="aspect-[4/5] h-auto w-full object-cover"
+              />
+              <figcaption className="px-4 py-3 text-sm text-text-muted">
+                {LOCATION_IMAGE.caption}
+              </figcaption>
+            </figure>
           </div>
 
           <div className="prose-measure mt-12 space-y-5 text-text-muted">
@@ -78,6 +100,19 @@ export default function LocationPage() {
               specific South Banks block to each park depend on the unreleased site plan and
               should be confirmed on a map, not assumed from brochure language.
             </p>
+            <figure className="card my-8 overflow-hidden">
+              <Image
+                src={BRIDGE_IMAGE.src}
+                alt={BRIDGE_IMAGE.alt}
+                width={BRIDGE_IMAGE.width}
+                height={BRIDGE_IMAGE.height}
+                sizes="(max-width: 800px) 100vw, 760px"
+                className="h-auto w-full object-cover"
+              />
+              <figcaption className="px-4 py-3 text-sm text-text-muted">
+                {BRIDGE_IMAGE.caption}
+              </figcaption>
+            </figure>
             <h2 className="text-3xl">Transit and highway access</h2>
             <p>
               Long Branch GO Station is the commuter rail stop most often paired with this

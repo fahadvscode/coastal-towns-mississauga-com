@@ -69,7 +69,7 @@ export function residenceSchema() {
       addressCountry: ADDRESS_COUNTRY,
     },
     url: `${SITE_URL}/`,
-    image: `${SITE_URL}/images/south-banks-hero.jpg`,
+    image: `${SITE_URL}/images/image001.jpg`,
     geo: {
       "@type": "GeoCoordinates",
       latitude: GEO.latitude,
@@ -143,7 +143,7 @@ export function articleSchema() {
     mainEntityOfPage: canonical(meta.path),
     author: { "@id": `${SITE_URL}/#organization` },
     publisher: { "@id": `${SITE_URL}/#organization` },
-    image: `${SITE_URL}/images/south-banks-hero.jpg`,
+    image: `${SITE_URL}/images/image001.jpg`,
   };
 }
 

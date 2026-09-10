@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { RegisterBand } from "@/components/RegisterBand";
 import { JsonLd } from "@/components/JsonLd";
-import { GALLERY_ITEMS, LAST_UPDATED, PAGE_META } from "@/lib/content";
+import { GALLERY_ITEMS, PAGE_META } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 import { breadcrumbSchema, gallerySchema, webPageSchema } from "@/lib/schema";
 
@@ -31,23 +31,22 @@ export default function GalleryPage() {
           <h1 className="mt-3 max-w-[20ch] text-4xl md:text-5xl">{PAGE_META.gallery.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
-              Official architectural renderings and a republishable site plan for South Banks Towns
-              (formerly Coastal Towns) have not been confirmed as licensable for this independent
-              site as of {LAST_UPDATED}. The first two panels below are labelled &quot;to be
-              added.&quot; They are not a substitute streetscape.
+              Official South Banks Towns imagery from the Deco Homes and Opus Homes marketing set
+              is shown below: the townhome rendering (image001), the Final_Bridge_1 waterfront
+              illustration, and lifestyle photography files DO_SB_Photography-9, -10, and -12.
+              Renderings and illustrations are for illustration only and are subject to change.
+              E.&O.E.
             </p>
             <p>
-              The remaining photographs are Lakeview Village waterfront context: conservation
-              shoreline, pier and boardwalk character, a lakeside promenade, and the Great Lakes
-              Waterfront Trail. Captions describe what each file actually shows. None of them
-              should be read as a guaranteed amenity inside the unreleased South Banks Towns site
-              plan, and none are Deco Homes or Opus Homes marketing stills.
+              Captions use the source file names so each image can be matched to the asset it came
+              from. None of the lifestyle photographs should be read as a guaranteed amenity inside
+              an unreleased site plan, and none identify a specific purchaser.
             </p>
           </div>
           <GalleryGrid items={GALLERY_ITEMS} />
         </div>
       </article>
-      <RegisterBand heading="Get notified when official renderings are released" />
+      <RegisterBand heading="Register for South Banks Towns rendering and launch updates" />
     </>
   );
 }
