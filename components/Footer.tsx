@@ -10,8 +10,8 @@ export function Footer() {
           <div>
             <Wordmark inverted />
             <p className="mt-5 max-w-[36ch] text-sm text-surface/75">
-              Independent information and VIP registration for South Banks Towns, formerly marketed
-              as Coastal Towns, by Deco Homes and Opus Homes in Lakeview Village, Mississauga.
+              Independent information and VIP registration for South Banks Towns by Deco Homes and
+              Opus Homes in Lakeview Village, Mississauga.
             </p>
           </div>
           <nav aria-label="Footer">

@@ -29,10 +29,9 @@ export default function RegisterPage() {
             <p className="eyebrow">VIP Registration</p>
             <h1 className="mt-3 text-4xl md:text-5xl">{PAGE_META.register.h1}</h1>
             <p className="prose-measure mt-6 text-text-muted">
-              If you arrived searching Coastal Towns or Coastal Townhomes, this is the same Deco
-              Homes and Opus Homes waterfront community, now marketed as South Banks Towns. Register
-              once for launch timing, the confirmed price list, and floor plans as they are
-              released.
+              Register for launch timing, the confirmed price list, and floor plans as they are
+              released. The official project site lists coastal townhomes from $549,990, coming this
+              fall to Lakeview Village.
             </p>
           </div>
           <LeadForm />

@@ -8,7 +8,7 @@ export default function NotFound() {
         <h1 className="mt-3 text-4xl md:text-5xl">That page is not on this site</h1>
         <p className="prose-measure mt-6 text-text-muted">
           The address may have changed, or it may never have existed. Use the navigation or
-          register for South Banks Towns (formerly Coastal Towns) updates from the homepage.
+          register for South Banks Towns updates from the homepage.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/" className="btn-primary">

@@ -26,7 +26,7 @@ export default function PrivacyPage() {
             (utm_source, utm_medium, utm_campaign, utm_term, utm_content) from the address bar, the
             page path where you submitted, a consent timestamp, and a CASL consent flag. That
             information is used to respond to the registration request and to send project updates
-            about South Banks Towns (formerly Coastal Towns) and similar pre-construction
+            about South Banks Towns and similar pre-construction
             opportunities, consistent with the consent language on the form.
           </p>
           <h2 className="pt-2 text-3xl text-brand-primary">Where data is stored</h2>

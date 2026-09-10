@@ -4,7 +4,7 @@ import { LeadForm } from "./LeadForm";
 
 export function RegisterBand({
   heading = "Register for South Banks Towns updates",
-  intro = "Leave your details with the Registration Team. There is no phone number or email inbox on this site — this form is the only contact channel, including for privacy requests. If you first saw this project as Coastal Towns, you are registering for the same community.",
+  intro = "Leave your details with the Registration Team. There is no phone number or email inbox on this site — this form is the only contact channel, including for privacy requests.",
 }: {
   heading?: string;
   intro?: string;

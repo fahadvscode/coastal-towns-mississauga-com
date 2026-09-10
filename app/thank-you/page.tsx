@@ -31,10 +31,9 @@ export default function ThankYouPage() {
           <h1 className="mt-3 text-4xl md:text-5xl">{PAGE_META.thankYou.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
-              The Registration Team has your details for South Banks Towns, formerly marketed as
-              Coastal Towns, by Deco Homes and Opus Homes. When pricing, floor plans, deposit
-              structure, or a launch date are released, updates can be sent to the contact
-              information you provided.
+              The Registration Team has your details for South Banks Towns by Deco Homes and Opus
+              Homes. When pricing, floor plans, deposit structure, or a launch date are released,
+              updates can be sent to the contact information you provided.
             </p>
             <p>
               Registration does not reserve a townhome and does not create a purchase agreement.

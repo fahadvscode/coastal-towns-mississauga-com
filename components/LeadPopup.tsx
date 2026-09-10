@@ -189,9 +189,8 @@ export function LeadPopup() {
 
         <div className="overflow-y-auto px-5 py-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
           <p className="mb-5 text-[15px] leading-relaxed text-text-muted">
-            Searching Coastal Towns? This is the same Deco Homes and Opus Homes waterfront
-            community, now marketed as South Banks Towns. Register for confirmed pricing and floor
-            plans as they are released.
+            Register for confirmed pricing and floor plans as they are released. Coastal townhomes
+            from $549,990, coming this fall to Lakeview Village.
           </p>
           <LeadForm id="popup-register" embedded source="popup" />
           <button

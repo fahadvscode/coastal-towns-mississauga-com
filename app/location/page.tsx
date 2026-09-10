@@ -40,13 +40,12 @@ export default function LocationPage() {
           <h1 className="mt-3 max-w-[22ch] text-4xl md:text-5xl">{PAGE_META.location.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
-              South Banks Towns (formerly Coastal Towns / Coastal Townhomes) is located at 1110
-              Lakeshore Road East in Mississauga, Ontario, inside Lakeview Village. The street
-              address is consistent across sources. The postal code is not: older Coastal
-              Townhomes-era pages give {POSTAL_LEGACY}, while more recently observed South Banks
-              listings give {POSTAL_PRIMARY}. This page treats {POSTAL_PRIMARY} as the more likely
-              current code because it comes from the newer sources, and flags both so a contract is
-              not drafted on a guessed code.
+              South Banks Towns is located at 1110 Lakeshore Road East in Mississauga, Ontario,
+              inside Lakeview Village. The street address is consistent across sources. The postal
+              code is not: some older listings give {POSTAL_LEGACY}, while more recently observed
+              South Banks listings give {POSTAL_PRIMARY}. This page treats {POSTAL_PRIMARY} as the
+              more likely current code because it comes from the newer sources, and flags both so a
+              contract is not drafted on a guessed code.
             </p>
             <p>
               Lakeview Village is a 177-acre master-planned waterfront redevelopment of the former
@@ -94,11 +93,12 @@ export default function LocationPage() {
             </p>
             <p>
               Named parks cited near the community include Lakefront Promenade Park and Marie
-              Curtis Park. Across Lakeview Village, sources cite 45 or more acres of parks and
-              public green space — some write 50-plus — plus a 600-metre pier with a retail
-              boardwalk and a marina. Those are master-plan elements. Walking times from a
-              specific South Banks block to each park depend on the unreleased site plan and
-              should be confirmed on a map, not assumed from brochure language.
+              Curtis Park. The official South Banks site places the towns steps from the marina,
+              the pier, and the park, and describes Lakeview Village as having over 50 acres of
+              parks and greenspace plus public promenades. Other sources still cite 45 or more
+              acres and a 600-metre pier with a retail boardwalk. Those are master-plan elements.
+              Walking times from a specific South Banks block to each park depend on the
+              unreleased site plan and should be confirmed on a map.
             </p>
             <figure className="card my-8 overflow-hidden">
               <Image
@@ -143,11 +143,10 @@ export default function LocationPage() {
             <h2 className="text-3xl">South Banks vs other Lakeview Village builders</h2>
             <p>
               Three townhome builders are publicly associated with Lakeview Village releases.
-              South Banks Towns is the Deco Homes and Opus Homes collection — the same project
-              formerly marketed as Coastal Towns. Aura Lakeview Village Towns is a Caivan
-              Communities project. Pier House Towns is a Branthaven project. They share a master
-              plan and a shoreline. They do not share a builder, a price list, or a floor-plan
-              book.
+              South Banks Towns is the Deco Homes and Opus Homes collection. Aura Lakeview Village
+              Towns is a Caivan Communities project. Pier House Towns is a Branthaven project.
+              They share a master plan and a shoreline. They do not share a builder, a price list,
+              or a floor-plan book.
             </p>
           </div>
 
@@ -178,15 +177,13 @@ export default function LocationPage() {
               replaces a timed drive at the hour you actually travel.
             </p>
             <p>
-              The Coastal Towns name on this domain is not a second address. It is the earlier
-              marketing name for the same Deco Homes and Opus Homes release. A pin dropped on
-              1110 Lakeshore Road East for Coastal Townhomes and a pin dropped for South Banks
-              Towns should land on the same street. If a map or listing shows a different
-              Lakeshore block, treat that as a different project until the address matches.
+              A pin dropped on 1110 Lakeshore Road East for South Banks Towns should land on this
+              same street. If a map or listing shows a different Lakeshore block, treat that as a
+              different project until the address matches.
             </p>
           </div>
           <p className="prose-measure mt-4 text-text-muted">
-            For the rename explainer, see the{" "}
+            For the project overview, see the{" "}
             <Link href="/" className="underline underline-offset-2 hover:text-brand-accent">
               homepage
             </Link>

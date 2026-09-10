@@ -31,11 +31,11 @@ export default function FloorPlansPage() {
           <h1 className="mt-3 max-w-[20ch] text-4xl md:text-5xl">{PAGE_META.floorPlans.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
-              South Banks Towns, formerly marketed as Coastal Towns and Coastal Townhomes, is
-              described as a collection of more than 120 three-storey coastal-style freehold
-              townhomes with private entrances and layered outdoor space. The configuration types
-              published so far are 3-bedroom, 3-bedroom plus den, 4-bedroom, and premium end-unit.
-              Individual plan names and exact interior sizes have not been released.
+              South Banks Towns is described as a collection of more than 120 three-storey
+              coastal-style freehold townhomes with private entrances and layered outdoor space.
+              The configuration types published so far are 3-bedroom, 3-bedroom plus den,
+              4-bedroom, and premium end-unit. Individual plan names and exact interior sizes have
+              not been released.
             </p>
             <p>
               This page stops at those four tiers on purpose. Inventing brochure names, square
@@ -66,10 +66,9 @@ export default function FloorPlansPage() {
               description is the four configuration types already named.
             </p>
             <p>
-              If you first encountered this collection as Coastal Townhomes, the floor-plan
-              question has not changed with the rename: it is still more than 120 freehold towns,
-              still without published square footage. The name on the cover of a future brochure
-              may say South Banks. The missing numbers are the same missing numbers.
+              Until Deco Homes and Opus Homes publish square footage, the public description stays
+              at more than 120 freehold coastal towns across those four configuration types. The
+              official project site lists homes from $549,990, coming this fall.
             </p>
           </div>
           <figure className="card mt-10 max-w-[720px] overflow-hidden">

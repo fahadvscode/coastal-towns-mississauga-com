@@ -28,43 +28,32 @@ export default function HomePage() {
       <Hero />
       <QuickFacts />
 
-      <section className="section-space bg-surface" aria-labelledby="rename-heading">
+      <section className="section-space bg-surface" aria-labelledby="community-heading">
         <FadeIn className="mx-auto max-w-[1200px] px-5">
-          <p className="eyebrow">The name change</p>
-          <h2 id="rename-heading" className="mt-3 max-w-[22ch] text-3xl md:text-4xl">
-            Coastal Towns is now South Banks Towns
+          <p className="eyebrow">Coming this fall</p>
+          <h2 id="community-heading" className="mt-3 max-w-[22ch] text-3xl md:text-4xl">
+            Coastal townhomes on the Lake Ontario shoreline
           </h2>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
-              If you have seen this project marketed before under the name <strong>Coastal Towns</strong>{" "}
-              or <strong>Coastal Townhomes</strong>, you are in the right place. Multiple independent
-              sources confirm the same Deco Homes and Opus Homes waterfront townhome community at
-              1110 Lakeshore Road East has since been rebranded to <strong>South Banks</strong>, or{" "}
-              <strong>South Banks Towns</strong>. This page uses the current name for accuracy while
-              keeping the earlier name front and centre, because that is still what many buyers type
-              into Google.
+              South Banks is a coastal townhome collection in Lakeview Village, brought to market
+              by Deco Homes and Opus Homes. The official project site lists homes from{" "}
+              <strong>$549,990</strong>, coming this fall to the Mississauga waterfront at 1110
+              Lakeshore Road East.
             </p>
             <p>
-              The split in the search results is unusually clean. Older agent microsites still
-              describe Coastal Townhomes as if the name never changed. Newer South Banks pages
-              describe the same address and builders without mentioning Coastal Towns at all. Neither
-              side of that split answers the question people actually ask: whether the two names
-              point at one project. They do.
+              More than 120 three-storey freehold townhomes are planned, each with a private
+              entrance and layered outdoor space. Reported layouts include 3-bedroom,
+              3-bedroom-plus-den, 4-bedroom, and premium end-unit. Individual plan names and
+              interior sizes have not been released. Register above for the confirmed collection
+              sheet when it is issued.
             </p>
             <p>
-              This site does not claim a specific rename date, and it does not assert that
-              &quot;Coastal Towns&quot; was ever the fully final legal project name rather than a
-              working marketing name. What is reported, repeatedly, is the bridge: previously
-              marketed as Coastal Townhomes, now presented as South Banks. That is the fact this
-              information hub is built to make unambiguous.
-            </p>
-            <p>
-              South Banks Towns brings more than 120 three-storey freehold townhomes to Lakeview
-              Village, a 177-acre master-planned redevelopment of the former Lakeview Generating
-              Station site on the shore of Lake Ontario. Configurations include 3-bedroom,
-              3-bedroom-plus-den, 4-bedroom, and premium end-unit layouts, each with a private
-              entrance. Register above to receive the current, confirmed price list and floor plans
-              as they are released.
+              Lakeview Village is a 177-acre waterfront redevelopment on the former Lakeview
+              Generating Station site. The official South Banks site describes it as one of the
+              GTA&apos;s major waterfront projects, minutes from downtown, with more than 50 acres
+              of parks and greenspace, public promenades, and room for retail, restaurants, and
+              employment. Towns are marketed as close to the marina, the pier, and the park.
             </p>
           </div>
         </FadeIn>
@@ -119,23 +108,21 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-5">
           <p className="eyebrow">Reported figures</p>
           <h2 id="pricing-heading" className="mt-3 max-w-[22ch] text-3xl md:text-4xl">
-            Why the published prices do not agree
+            From $549,990 on the official project site
           </h2>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
-              Reported pricing for South Banks Towns varies meaningfully by source. Several listings
-              say from the $500,000s. Another cites from the $700,000s. Others describe a span from
-              the $500,000s to about $1 million. This page presents that full range rather than
-              silently picking one figure, because picking one would make the page look finished
-              and make it wrong.
+              The official South Banks site publishes coastal townhomes from $549,990. Other
+              listings still cite from the $500,000s, from the $700,000s, or a span to about $1
+              million. This page leads with the official starting figure and keeps the wider
+              reported range in view on the pricing page.
             </p>
             <p>
-              A Fall 2026 launch is reported — listings dated in summer 2026 described the project
-              as &quot;coming this fall&quot; — with a targeted 2028 completion. A confirmed
-              deposit structure has not been published from a primary source. Register to receive
-              those details from the Registration Team when they are released, rather than treating
-              another Lakeview Village builder&apos;s deposit schedule as a stand-in.{" "}
-              {PRICING_DISCLAIMER}
+              Launch is listed as coming this fall, with a targeted 2028 completion. The sales
+              gallery is marked coming soon. A confirmed deposit structure has not been published
+              from a primary source. Register to receive those details from the Registration Team
+              when they are released, rather than treating another Lakeview Village builder&apos;s
+              deposit schedule as a stand-in. {PRICING_DISCLAIMER}
             </p>
             <p>
               Last updated {LAST_UPDATED}. For the sourced breakdown, see the{" "}
@@ -171,15 +158,7 @@ export default function HomePage() {
               number and no email address on any page, including privacy and the 404.
             </p>
             <p>
-              The crowded field around this project is the reason the rename explainer exists. At
-              least nine agent microsites and aggregators already cover the same address, split
-              between the old name and the new one. The gap is not &quot;first to publish.&quot;
-              The gap is a page that will say, in the opening paragraph, that Coastal Towns became
-              South Banks Towns, that the builders are Deco Homes and Opus Homes, and that the
-              published prices do not currently agree.
-            </p>
-            <p>
-              Sixteen frequently asked questions, including the rename question, live on the{" "}
+              Sixteen frequently asked questions live on the{" "}
               <Link href="/faq" className="underline underline-offset-2 hover:text-brand-accent">
                 FAQ
               </Link>{" "}
@@ -191,11 +170,11 @@ export default function HomePage() {
               >
                 Lakeview Village waterfront buyer&apos;s guide
               </Link>
-              . Official renderings are labelled as to-be-added on the{" "}
+              . Official renderings and photography are on the{" "}
               <Link href="/gallery" className="underline underline-offset-2 hover:text-brand-accent">
                 gallery
               </Link>
-              ; waterfront context photography is not a substitute streetscape.
+              .
             </p>
           </div>
         </div>

@@ -55,8 +55,8 @@ export default function BlogPage() {
             </p>
             <p>
               This guide is written for that confusion. It maps the village, names the builders
-              who are actually releasing homes there, and places South Banks Towns — formerly
-              marketed as Coastal Towns and Coastal Townhomes — in that context without pretending
+              who are actually releasing homes there, and places South Banks Towns in that
+              context without pretending
               the other collections are the same community under a different headline.
             </p>
 
@@ -94,11 +94,10 @@ export default function BlogPage() {
             <p>
               <strong>Deco Homes and Opus Homes — South Banks Towns.</strong> This is the
               120-plus three-storey freehold townhome collection at 1110 Lakeshore Road East.
-              It was originally marketed as Coastal Towns / Coastal Townhomes and has since been
-              rebranded to South Banks / South Banks Towns. Reported configurations are 3-bedroom,
-              3-bedroom plus den, 4-bedroom, and premium end-unit. Reported pricing spans the
-              $500,000s to about $1 million depending on the source. Launch is reported as Fall
-              2026; completion is targeted for 2028. Deco Homes (founded 1995, Decor Studio) and
+              The official project site lists coastal townhomes from $549,990, coming this fall.
+              Reported configurations are 3-bedroom,
+              3-bedroom plus den, 4-bedroom, and premium end-unit. Other listings still cite a
+              range from the $500,000s to about $1 million. Completion is targeted for 2028. Deco Homes (founded 1995, Decor Studio) and
               Opus Homes (Living Refined™ / Signature Finishes™) are the builders. They are not
               Caivan, not Branthaven, and not a generic &quot;Lakeview Homes.&quot;
             </p>

@@ -49,7 +49,7 @@ export function siteOrganizationSchema() {
     name: SITE_ORG_NAME,
     url: `${SITE_URL}/`,
     description:
-      "An independent information and registration resource for South Banks Towns, formerly marketed as Coastal Towns. Not affiliated with or endorsed by Deco Homes or Opus Homes.",
+      "An independent information and registration resource for South Banks Towns. Not affiliated with or endorsed by Deco Homes or Opus Homes.",
   };
 }
 
@@ -60,7 +60,7 @@ export function residenceSchema() {
     name: "South Banks Towns",
     alternateName: "Coastal Towns",
     description:
-      "South Banks Towns, formerly marketed as Coastal Towns, is a pre-construction waterfront townhome community by Deco Homes and Opus Homes at 1110 Lakeshore Road East in Mississauga's Lakeview Village.",
+      "South Banks Towns is a pre-construction waterfront townhome community by Deco Homes and Opus Homes at 1110 Lakeshore Road East in Mississauga's Lakeview Village.",
     address: {
       "@type": "PostalAddress",
       streetAddress: STREET_ADDRESS,

@@ -32,10 +32,10 @@ export default function PricingPage() {
           <h1 className="mt-3 text-4xl md:text-5xl">{PAGE_META.pricing.h1}</h1>
           <div className="prose-measure mt-6 space-y-5 text-text-muted">
             <p>
-              South Banks Towns pricing is not a single published number. Listings under the current
-              name cite three different bands: from the $500,000s, from the $700,000s, and a span
-              running from the $500,000s to about $1 million. This page keeps all three in view
-              rather than collapsing them into one headline figure. Last updated {LAST_UPDATED}.
+              The official South Banks site lists coastal townhomes from $549,990, coming this
+              fall. Other listings still cite from the $500,000s, from the $700,000s, or a span
+              running from the $500,000s to about $1 million. This page leads with the official
+              starting figure and keeps the wider reported range below. Last updated {LAST_UPDATED}.
             </p>
             <p>
               The $500,000s starting range appears on several aggregator pages. The $700,000s
@@ -72,7 +72,7 @@ export default function PricingPage() {
               span, flagged as reported.
             </p>
             <p>
-              For the rename context that still drives many Coastal Towns searches, start on the{" "}
+              For the project overview, start on the{" "}
               <Link href="/" className="underline underline-offset-2 hover:text-brand-accent">
                 overview
               </Link>
